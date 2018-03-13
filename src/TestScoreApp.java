@@ -22,9 +22,14 @@ public class TestScoreApp {
             testScore = sc.nextInt();
 
             // accumulate score count and score total
-            if (testScore <= 998) {
+            if (testScore <= 100) {
                 scoreCount = scoreCount + 1;
                 scoreTotal = scoreTotal + testScore;
+            }
+                else if(testScore > 100)
+                	System.out.println("Invalid entry; not counted");
+                
+                	
             }
         }
 
